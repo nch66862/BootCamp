@@ -1,4 +1,3 @@
-
 // Declare the available computer options
 let computerChoices = ["rock", "paper", "scissors"]
 
@@ -82,14 +81,21 @@ console.log("Computer wins: " + computerWins)
 console.log("Ties: " + tie)
 console.log ("Looped " + loops + " times")
 
-let counter = 0
+
+// Since I am writing the while-loop in the same file,
+// I will reset my variables
 computerChoiceIndex = 0
 computerWins = 0
 tie = 0
 userWins = 0
 loops = 0
 
+// Create a new variable to terminate the while-loop
+let counter = 0
+
+// loop until the counter is not less than 196
 while (counter < 196) {
+    // Follow the same steps as the for-loop
     if (computerChoiceIndex > computerChoices.length - 1) {
         computerChoiceIndex = 0
     }
@@ -117,9 +123,13 @@ while (counter < 196) {
     }
     computerChoiceIndex++
     loops++
+
+    // remember to incremement the counter or the loop
+    // will run without stopping
     counter++
 }
 
+// Log the results
 console.log("")
 console.log("While loop results:")
 console.log("User wins: " + userWins);
