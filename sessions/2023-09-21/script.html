@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <!-- a paragraph element with a unique id -->
+    <p id="firstParagraph">This is a paragraph</p>
+    <script>
+        // document is an object to access and manipulate the elements and content of the HTML document.
+        // I use the document object here to select and store my html element
+        let paragraph = document.getElementById("firstParagraph")
+
+        // I change the property of the HTML element to alter the text.
+        // When this page loads, the text will change from "This is a paragaraph" to
+        // "i is words"
+        paragraph.innerHTML = "i is words"
+    </script>
+</html>
