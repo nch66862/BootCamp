@@ -1,0 +1,59 @@
+<main>
+    <!-- Parent biography component -->
+    <article class="bio">
+
+        <!-- Child biography component -->
+        <section class="bio__name">
+            <h1>Sally Forthwright</h1>
+        </section>
+
+        <!-- Child biography component -->
+        <section class="bio__address">
+            100 Infinity Way, Nashville
+        </section>
+
+        <!-- Child biography component -->
+        <section class="bio__interests">
+            <div class="interest">
+                Oyster harvesting
+            </div>
+            <div class="interest">
+                Juggling
+            </div>
+            <div class="interest">
+                Triathalons
+            </div>
+            <div class="interest">
+                Killing ants
+            </div>
+            <div class="interest">
+                Melting stuff
+            </div>
+            <div class="interest">
+                Coloring
+            </div>
+            <div class="interest">
+                Sleeping
+            </div>
+            <div class="interest">
+                Singing
+            </div>
+        </section>
+
+    </article>
+    <style>
+        .interest {
+            border: 1px dotted crimson;
+            padding: 1em;
+            margin: 0.5em;
+            flex-basis: 20%;
+            text-align: center;
+        }
+
+        .bio__interests {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    </style>
+</main>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <h1 id="title">God bless the USA</h1>
+
+    <p id="lyrics">
+        
+    </p>
+
+    <style>
+        #title {
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+    <script>
+        let element = document.getElementById("lyrics");
+        element.innerHTML = "if tomorrow all the things were gone that I'd worked for all my life\
+                                and I had to start again, with just my children and my wife";
+        element.innerHTML += chorus();
+        element.innterHTML += "From the lakes of Minnesota\
+                                To the hills of Tennessee\
+                                Across the plains of Texas\
+                                From sea to shining sea\
+                                From Detroit down to Houston\
+                                And New York to L.A.\
+                                Where's pride in every American heart\
+                                And it's time we stand and say";
+        element.innerHTML += chorus();
+
+        
+        function chorus() {
+            return "And I'm proud to be an American\
+                    Where at least I know I'm free\
+                    And I won't forget the men who died\
+                    Who gave that right to me\
+                    And I'd gladly stand up next to you\
+                    And defend Her still today\
+                    'Cause there ain't no doubt\
+                    I love this land\
+                    God Bless the U.S.A.";
+        }
+    </script>
+</html>
